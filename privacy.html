@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Infinyte</title>
+  <meta name="description" content="Infinyte Privacy Policy — How we protect and use your data.">
+  <meta name="theme-color" content="#0a0a0f">
+  <link rel="icon" type="image/png" href="images/icon-glow-sm.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .legal { padding: 140px 24px 80px; max-width: 800px; margin: 0 auto; }
+    .legal__back { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; color: var(--color-primary); margin-bottom: 32px; transition: opacity 0.2s; }
+    .legal__back:hover { opacity: 0.8; }
+    .legal__title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 8px; }
+    .legal__date { font-size: 0.85rem; color: var(--color-text-tertiary); margin-bottom: 12px; }
+    .legal__summary { font-size: 1.05rem; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--color-border); }
+    .legal__section { margin-bottom: 40px; }
+    .legal__section-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 16px; color: var(--color-text); }
+    .legal__section-num { font-size: 0.75rem; font-weight: 700; color: var(--color-primary); margin-bottom: 8px; font-family: monospace; }
+    .legal__list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .legal__list li { font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.7; padding-left: 20px; position: relative; }
+    .legal__list li::before { content: ''; position: absolute; left: 0; top: 10px; width: 5px; height: 5px; background: var(--color-primary); border-radius: 50%; opacity: 0.6; }
+    .legal__footer-text { font-size: 0.9rem; color: var(--color-text-tertiary); margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--color-border); line-height: 1.7; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/icon-glow-sm.png" alt="Infinyte" class="nav__logo-img">
+        <span class="nav__logo-text">Infinyte</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html#features" class="nav__link">Features</a>
+        <a href="index.html#security" class="nav__link">Security</a>
+        <a href="privacy.html" class="nav__link">Privacy</a>
+        <a href="terms.html" class="nav__link">Terms</a>
+      </div>
+      <div class="nav__actions">
+        <a href="index.html#download" class="nav__cta">Download</a>
+        <button class="nav__menu-btn" id="menuBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="legal">
+    <a href="index.html" class="legal__back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to Home
+    </a>
+
+    <h1 class="legal__title">Privacy Policy</h1>
+    <p class="legal__date">Effective date: February 17, 2026</p>
+    <p class="legal__summary">This Privacy Policy explains what data Infinyte processes, why we use it, who we share it with, and which controls you have over your information.</p>
+
+    <div class="legal__section">
+      <span class="legal__section-num">01</span>
+      <h2 class="legal__section-title">Controller and scope</h2>
+      <ul class="legal__list">
+        <li>Infinyte operates this service for mobile devices.</li>
+        <li>This policy covers use of the app and related services for authentication, profile, subscriptions, and notifications.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">02</span>
+      <h2 class="legal__section-title">Data we process</h2>
+      <ul class="legal__list">
+        <li>Account data: email, password (managed by Supabase Auth), first and last name.</li>
+        <li>Optional profile data: avatar/photo, phone number, date of birth, occupation, and location that you choose to provide.</li>
+        <li>Financial data you enter in the app: accounts, transactions, budgets, debts, goals, and planner entries.</li>
+        <li>Subscription data: plan status and purchase events validated through Apple/Google stores and RevenueCat.</li>
+        <li>Access policy data tied to your plan, including Free-tier limits (currently up to 3 active budgets and 3 active goals).</li>
+        <li>Minimum technical data: app version, operating system, and error events required for operation and security.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">03</span>
+      <h2 class="legal__section-title">Where your data is stored</h2>
+      <ul class="legal__list">
+        <li>Your financial records are primarily stored on your device in an encrypted Realm database at rest.</li>
+        <li>Supabase infrastructure stores authentication data, basic profile data, preferences, and avatar (if uploaded).</li>
+        <li>Backups enabled from the app are generated locally on your device.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">04</span>
+      <h2 class="legal__section-title">Device permissions</h2>
+      <ul class="legal__list">
+        <li>Camera and photo library: only to take or choose a profile photo.</li>
+        <li>Biometrics: only for local app unlock; we do not receive your fingerprint or Face ID template.</li>
+        <li>Notifications: only if you enable reminders or background tasks.</li>
+        <li>We currently do not use contacts, location, calendar, or microphone for production app features.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">05</span>
+      <h2 class="legal__section-title">How we use data</h2>
+      <ul class="legal__list">
+        <li>Create and protect your account, authenticate sessions, and prevent unauthorized use.</li>
+        <li>Display and process your finances inside the app.</li>
+        <li>Sync specific cloud elements: profile, avatar, preferences, and in-app notifications.</li>
+        <li>Manage subscriptions, restores, and premium feature access.</li>
+        <li>Comply with legal obligations and valid authority requests.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">06</span>
+      <h2 class="legal__section-title">Third parties with limited access</h2>
+      <ul class="legal__list">
+        <li>Supabase: authentication, database, and avatar storage.</li>
+        <li>Google: only if you choose Google Sign-In.</li>
+        <li>RevenueCat and Apple/Google stores: purchase management and subscription status.</li>
+        <li>We do not sell your data or share it for third-party advertising.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">07</span>
+      <h2 class="legal__section-title">Retention and deletion</h2>
+      <ul class="legal__list">
+        <li>We keep account and profile data while your account is active or as legally required.</li>
+        <li>You can remove your avatar from within the app at any time.</li>
+        <li>Local data can be removed by uninstalling the app or clearing/restoring device storage.</li>
+        <li>To request deletion of account/server-side data, use the support channels available in the app.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">08</span>
+      <h2 class="legal__section-title">Your rights</h2>
+      <ul class="legal__list">
+        <li>Request access, correction, updates, or deletion of your personal data.</li>
+        <li>Withdraw optional consents (for example biometrics or notifications) from settings.</li>
+        <li>Depending on your country, you may also have portability or objection rights.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">09</span>
+      <h2 class="legal__section-title">Security and international transfers</h2>
+      <ul class="legal__list">
+        <li>We apply encryption in transit (HTTPS/TLS), local encryption at rest, and access controls.</li>
+        <li>Because we use global providers, some processing may occur outside your country with contractual safeguards.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">10</span>
+      <h2 class="legal__section-title">Changes to this policy</h2>
+      <ul class="legal__list">
+        <li>We may update this policy to reflect technical or legal changes.</li>
+        <li>If a change is material, we will notify you inside the app before it takes effect.</li>
+      </ul>
+    </div>
+
+    <p class="legal__footer-text">If you do not agree with this policy, you must stop using the app. Continued use means you accept the current version.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__bottom">
+        <span>&copy; 2026 Infinyte. All rights reserved.</span>
+        <span>
+          <a href="privacy.html" style="color: var(--color-text-tertiary); margin-right: 16px;">Privacy</a>
+          <a href="terms.html" style="color: var(--color-text-tertiary);">Terms</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.querySelector('.nav__links');
+    if (menuBtn && navLinks) {
+      menuBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
+    }
+  </script>
+</body>
+</html>
