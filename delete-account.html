@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliminar Cuenta — Infinyte</title>
+  <meta name="description" content="Solicita la eliminación de tu cuenta de Infinyte y todos tus datos asociados.">
+  <meta name="theme-color" content="#161619">
+  <link rel="icon" type="image/png" href="images/icon-glow-sm.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .legal { padding: 140px 24px 80px; max-width: 800px; margin: 0 auto; }
+    .legal__back { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; color: var(--color-highlight); margin-bottom: 32px; transition: opacity 0.2s; }
+    .legal__back:hover { opacity: 0.8; }
+    .legal__title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .legal__date { font-size: 0.85rem; color: var(--color-text-tertiary); margin-bottom: 12px; }
+    .legal__summary { font-size: 1.05rem; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--color-border); }
+    .legal__section { margin-bottom: 40px; }
+    .legal__section-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 16px; color: var(--color-text); }
+    .legal__section-num { font-size: 0.75rem; font-weight: 700; color: var(--color-highlight); margin-bottom: 8px; font-family: monospace; }
+    .legal__list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .legal__list li { font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.7; padding-left: 20px; position: relative; }
+    .legal__list li::before { content: ''; position: absolute; left: 0; top: 10px; width: 5px; height: 5px; background: var(--color-highlight); border-radius: 50%; opacity: 0.6; }
+    .legal__footer-text { font-size: 0.9rem; color: var(--color-text-tertiary); margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--color-border); line-height: 1.7; }
+
+    .delete-cta {
+      margin-top: 48px;
+      padding: 40px;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    .delete-cta__title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .delete-cta__desc {
+      font-size: 0.95rem;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .delete-cta__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      border-radius: var(--radius-md);
+      font-family: var(--font);
+      font-size: 0.95rem;
+      font-weight: 700;
+      background: #e53935;
+      color: #fff;
+      transition: all 0.2s var(--ease-out);
+      border: none;
+      cursor: pointer;
+    }
+    .delete-cta__btn:hover {
+      background: #c62828;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(229, 57, 53, 0.3);
+    }
+    .delete-cta__note {
+      font-size: 0.8rem;
+      color: var(--color-text-tertiary);
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="images/icon-glow-sm.png" alt="Infinyte" class="nav__logo-img">
+        <span class="nav__logo-text">Infinyte</span>
+      </a>
+      <div class="nav__links">
+        <a href="index.html#features" class="nav__link">Funciones</a>
+        <a href="index.html#security" class="nav__link">Seguridad</a>
+        <a href="privacy.html" class="nav__link">Privacidad</a>
+        <a href="terms.html" class="nav__link">Términos</a>
+      </div>
+      <div class="nav__actions">
+        <a href="index.html#download" class="nav__cta">Acceso Anticipado</a>
+        <button class="nav__menu-btn" id="menuBtn" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="legal">
+    <a href="index.html" class="legal__back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      Volver al inicio
+    </a>
+
+    <h1 class="legal__title">Eliminar Cuenta</h1>
+    <p class="legal__date">Última actualización: 25 de febrero de 2026</p>
+    <p class="legal__summary">Si decidís eliminar tu cuenta de Infinyte, acá te explicamos qué pasa con tus datos, cómo funciona el proceso y cómo solicitarlo.</p>
+
+    <div class="legal__section">
+      <span class="legal__section-num">01</span>
+      <h2 class="legal__section-title">Qué se elimina</h2>
+      <ul class="legal__list">
+        <li>Tu cuenta de usuario (correo electrónico, nombre, contraseña).</li>
+        <li>Datos de perfil: avatar, teléfono, fecha de nacimiento, ocupación y ubicación.</li>
+        <li>Avatar y foto de perfil almacenados en nuestros servidores.</li>
+        <li>Preferencias, configuraciones y tokens de sesión asociados a tu cuenta.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">02</span>
+      <h2 class="legal__section-title">Qué NO se elimina automáticamente</h2>
+      <ul class="legal__list">
+        <li>Los datos financieros (cuentas, movimientos, presupuestos, metas, deudas y planificador) se almacenan localmente en tu dispositivo. Para eliminarlos, desinstalá la app o limpiá los datos de almacenamiento desde la configuración de tu dispositivo.</li>
+        <li>Si tenés una suscripción activa a través de Apple App Store o Google Play, debés cancelarla directamente desde la tienda correspondiente. Eliminar tu cuenta no cancela suscripciones externas automáticamente.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">03</span>
+      <h2 class="legal__section-title">Cómo solicitar la eliminación</h2>
+      <ul class="legal__list">
+        <li>Enviá un correo a <a href="mailto:infinyte.app+delete@gmail.com" style="color: var(--color-highlight);">infinyte.app+delete@gmail.com</a> desde el correo electrónico asociado a tu cuenta.</li>
+        <li>En el asunto, escribí: <strong style="color: var(--color-text);">Solicitud de eliminación de cuenta</strong>.</li>
+        <li>Verificaremos tu identidad y procesaremos la solicitud.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">04</span>
+      <h2 class="legal__section-title">Plazo y proceso</h2>
+      <ul class="legal__list">
+        <li>Las solicitudes se procesan en un plazo máximo de 30 días hábiles.</li>
+        <li>Recibirás una confirmación por correo cuando tus datos hayan sido eliminados.</li>
+        <li>Una vez completada la eliminación, no es posible recuperar la cuenta ni los datos del servidor.</li>
+      </ul>
+    </div>
+
+    <div class="legal__section">
+      <span class="legal__section-num">05</span>
+      <h2 class="legal__section-title">Excepciones</h2>
+      <ul class="legal__list">
+        <li>Podemos retener datos mínimos si la ley lo exige (por ejemplo, registros de transacciones de suscripción para cumplir obligaciones fiscales).</li>
+        <li>Los datos anonimizados o agregados que no permiten identificarte pueden conservarse con fines estadísticos.</li>
+      </ul>
+    </div>
+
+    <div class="delete-cta">
+      <h3 class="delete-cta__title">¿Querés eliminar tu cuenta?</h3>
+      <p class="delete-cta__desc">Envianos un correo desde la dirección asociada a tu cuenta y nos encargamos del resto.</p>
+      <a href="mailto:infinyte.app+delete@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta" class="delete-cta__btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        Solicitar eliminación
+      </a>
+      <p class="delete-cta__note">También podés escribirnos a <a href="mailto:infinyte.app+support@gmail.com" style="color: var(--color-highlight);">infinyte.app+support@gmail.com</a> para cualquier duda.</p>
+    </div>
+
+    <p class="legal__footer-text">Para más información sobre cómo tratamos tus datos, consultá nuestra <a href="privacy.html" style="color: var(--color-highlight);">Política de Privacidad</a>.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__bottom">
+        <span>&copy; 2026 Infinyte. Todos los derechos reservados.</span>
+        <span>
+          <a href="privacy.html" style="color: var(--color-text-tertiary); margin-right: 16px;">Privacidad</a>
+          <a href="terms.html" style="color: var(--color-text-tertiary); margin-right: 16px;">Términos</a>
+          <a href="delete-account.html" style="color: var(--color-text-tertiary);">Eliminar Cuenta</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.querySelector('.nav__links');
+    if (menuBtn && navLinks) {
+      menuBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
+    }
+  </script>
+</body>
+</html>
