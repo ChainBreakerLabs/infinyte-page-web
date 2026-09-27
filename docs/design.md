@@ -16,6 +16,11 @@ accounts/budgets, planner/calendar, and debts/goals. Each has a CSS iPhone frame
 with its complete interface and original aspect ratio. There is no horizontal
 gallery or separate Por dentro section.
 
+Website decoration uses no emojis or Unicode pictograms. Decorative stars are
+removed; action arrows use monochrome inline SVG with consistent stroke weight.
+Icons are hidden from assistive technology, while links retain their text or
+explicit accessible label. Plan bullets are CSS line marks.
+
 ## Observable interaction contracts
 
 - The header preserves links to features, security, pricing, and availability. The hero action targets features.

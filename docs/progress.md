@@ -109,3 +109,25 @@ Formatting, strict TypeScript, production compilation, the 14 updated browser
 checks, and diff whitespace checks passed again before delivery. GitHub Actions
 verifies the production output before deploying. Remote runs and their outcomes
 are tracked in the Actions tab and must be checked separately from local gates.
+
+## Follow-up: remove emoji decoration
+
+- [x] Locate text pictograms in the homepage, shared navigation, footers, and CSS.
+- [x] Remove decorative stars and replace action arrows with monochrome SVG.
+- [x] Preserve all routes, link labels, legal body text, app captures, and iPhone frames.
+- [x] Complete the six correctness/security review passes without concrete findings.
+- [x] Verify the build, browser suite, generated content, and responsive presentation.
+
+The change affects website markup and shared styles only. It introduces no
+runtime dependency or interaction-state changes. Copyright text remains ordinary
+text; the supplied app screenshots remain intact.
+
+Verification: formatting, strict TypeScript, production build, and all 14
+browser checks pass. A dedicated browser check scans body text and CSS-generated
+content on all four routes at 1440, 390, and 320 pixels: zero emoji pictograms.
+The visual QA run at desktop, tablet, mobile, and 320-pixel widths reports no
+page errors, missing resources, or document overflow. Hero, pricing, and closing
+section captures were inspected. The temporary icon-size check was corrected
+to preserve the existing intentionally hidden mobile stage note; no production
+code was changed to accommodate that expectation. No new production failures
+remain in the completed checks.
