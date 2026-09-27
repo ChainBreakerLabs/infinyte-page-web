@@ -1,206 +1,404 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Términos de Servicio — Infinyte</title>
-  <meta name="description" content="Términos de Servicio de Infinyte — Reglas y condiciones para usar la app.">
-  <meta name="theme-color" content="#161619">
-  <link rel="icon" type="image/png" href="images/icon-glow-sm.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <style>
-    .legal { padding: 140px 24px 80px; max-width: 800px; margin: 0 auto; }
-    .legal__back { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; color: var(--color-highlight); margin-bottom: 32px; transition: opacity 0.2s; }
-    .legal__back:hover { opacity: 0.8; }
-    .legal__title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .legal__date { font-size: 0.85rem; color: var(--color-text-tertiary); margin-bottom: 12px; }
-    .legal__summary { font-size: 1.05rem; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--color-border); }
-    .legal__section { margin-bottom: 40px; }
-    .legal__section-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 16px; color: var(--color-text); }
-    .legal__section-num { font-size: 0.75rem; font-weight: 700; color: var(--color-highlight); margin-bottom: 8px; font-family: monospace; }
-    .legal__list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-    .legal__list li { font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.7; padding-left: 20px; position: relative; }
-    .legal__list li::before { content: ''; position: absolute; left: 0; top: 10px; width: 5px; height: 5px; background: var(--color-highlight); border-radius: 50%; opacity: 0.6; }
-    .legal__footer-text { font-size: 0.9rem; color: var(--color-text-tertiary); margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--color-border); line-height: 1.7; }
-  </style>
-</head>
-<body>
+<!doctype html>
+<html lang="es" class="no-script">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Términos de Servicio — Infinyte</title>
+    <meta
+      name="description"
+      content="Términos de Servicio de Infinyte — Reglas y condiciones para usar la app."
+    />
+    <meta name="theme-color" content="#f1f0e8" />
+    <link rel="icon" type="image/webp" href="images/infinyte-icon.webp" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <style>
+      .legal {
+        padding: 140px 24px 80px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .legal__back {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.85rem;
+        color: var(--color-highlight);
+        margin-bottom: 32px;
+        transition: opacity 0.2s;
+      }
+      .legal__back:hover {
+        opacity: 0.8;
+      }
+      .legal__title {
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin-bottom: 8px;
+      }
+      .legal__date {
+        font-size: 0.85rem;
+        color: var(--color-text-tertiary);
+        margin-bottom: 12px;
+      }
+      .legal__summary {
+        font-size: 1.05rem;
+        color: var(--color-text-secondary);
+        line-height: 1.7;
+        margin-bottom: 48px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid var(--color-border);
+      }
+      .legal__section {
+        margin-bottom: 40px;
+      }
+      .legal__section-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: var(--color-text);
+      }
+      .legal__section-num {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--color-highlight);
+        margin-bottom: 8px;
+        font-family: monospace;
+      }
+      .legal__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .legal__list li {
+        font-size: 0.95rem;
+        color: var(--color-text-secondary);
+        line-height: 1.7;
+        padding-left: 20px;
+        position: relative;
+      }
+      .legal__list li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 5px;
+        height: 5px;
+        background: var(--color-highlight);
+        border-radius: 50%;
+        opacity: 0.6;
+      }
+      .legal__footer-text {
+        font-size: 0.9rem;
+        color: var(--color-text-tertiary);
+        margin-top: 48px;
+        padding-top: 32px;
+        border-top: 1px solid var(--color-border);
+        line-height: 1.7;
+      }
+    </style>
+  </head>
+  <body id="top">
+    <a href="#main" class="skip-link">Ir al contenido</a>
 
-  <nav class="nav scrolled" id="nav">
-    <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <img src="images/icon-glow-sm.png" alt="Infinyte" class="nav__logo-img">
-        <span class="nav__logo-text">Infinyte</span>
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="Infinyte, inicio"
+          ><img src="images/infinyte-icon.webp" width="38" height="38" alt="" /><span
+            >Infinyte<span class="brand-dot">.</span></span
+          ></a
+        >
+        <div class="nav__links" id="navigation-links">
+          <a href="index.html#features">La app</a><a href="index.html#pricing">Planes</a
+          ><a href="index.html#security">Privacidad</a>
+        </div>
+        <div class="nav__actions">
+          <a href="index.html#download" class="nav__cta"
+            >Quiero conocerla <span aria-hidden="true">↗</span></a
+          ><button
+            class="nav__menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-label="Abrir menú"
+            aria-controls="navigation-links"
+            aria-expanded="false"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="legal" id="main">
+      <a href="index.html" class="legal__back">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+        Volver al inicio
       </a>
-      <div class="nav__links">
-        <a href="index.html#features" class="nav__link">Funciones</a>
-        <a href="index.html#security" class="nav__link">Seguridad</a>
-        <a href="privacy.html" class="nav__link">Privacidad</a>
-        <a href="terms.html" class="nav__link">Términos</a>
+
+      <h1 class="legal__title">Términos de Servicio</h1>
+      <p class="legal__date">Fecha de vigencia: 17 de febrero de 2026</p>
+      <p class="legal__summary">
+        Estos Términos de Uso regulan el acceso y uso de Infinyte. Al registrarte o usar
+        la app, aceptás quedar sujeto a estos términos.
+      </p>
+
+      <div class="legal__section">
+        <span class="legal__section-num">01</span>
+        <h2 class="legal__section-title">Aceptación y alcance</h2>
+        <ul class="legal__list">
+          <li>
+            Estos términos aplican al uso de la app móvil Infinyte y sus funcionalidades
+            relacionadas.
+          </li>
+          <li>
+            Al crear una cuenta o usar el servicio, aceptás estos términos y la Política
+            de Privacidad vigente.
+          </li>
+        </ul>
       </div>
-      <div class="nav__actions">
-        <a href="index.html#download" class="nav__cta">Acceso Anticipado</a>
-        <button class="nav__menu-btn" id="menuBtn" aria-label="Menú">
-          <span></span><span></span><span></span>
-        </button>
+
+      <div class="legal__section">
+        <span class="legal__section-num">02</span>
+        <h2 class="legal__section-title">Elegibilidad y cuenta</h2>
+        <ul class="legal__list">
+          <li>
+            Debés tener capacidad legal en tu jurisdicción o autorización de tu
+            representante legal.
+          </li>
+          <li>
+            Sos responsable de mantener tus credenciales confidenciales y de la
+            actividad en tu cuenta.
+          </li>
+          <li>
+            Podemos suspender o restringir el acceso por fraude, abuso o incumplimiento
+            de estos términos.
+          </li>
+        </ul>
       </div>
-    </div>
-  </nav>
 
-  <main class="legal">
-    <a href="index.html" class="legal__back">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-      Volver al inicio
-    </a>
-
-    <h1 class="legal__title">Términos de Servicio</h1>
-    <p class="legal__date">Fecha de vigencia: 17 de febrero de 2026</p>
-    <p class="legal__summary">Estos Términos de Uso regulan el acceso y uso de Infinyte. Al registrarte o usar la app, aceptás quedar sujeto a estos términos.</p>
-
-    <div class="legal__section">
-      <span class="legal__section-num">01</span>
-      <h2 class="legal__section-title">Aceptación y alcance</h2>
-      <ul class="legal__list">
-        <li>Estos términos aplican al uso de la app móvil Infinyte y sus funcionalidades relacionadas.</li>
-        <li>Al crear una cuenta o usar el servicio, aceptás estos términos y la Política de Privacidad vigente.</li>
-      </ul>
-    </div>
-
-    <div class="legal__section">
-      <span class="legal__section-num">02</span>
-      <h2 class="legal__section-title">Elegibilidad y cuenta</h2>
-      <ul class="legal__list">
-        <li>Debés tener capacidad legal en tu jurisdicción o autorización de tu representante legal.</li>
-        <li>Sos responsable de mantener tus credenciales confidenciales y de la actividad en tu cuenta.</li>
-        <li>Podemos suspender o restringir el acceso por fraude, abuso o incumplimiento de estos términos.</li>
-      </ul>
-    </div>
-
-    <div class="legal__section">
-      <span class="legal__section-num">03</span>
-      <h2 class="legal__section-title">Naturaleza del servicio</h2>
-      <ul class="legal__list">
-        <li>Infinyte es una herramienta de organización de finanzas personales.</li>
-        <li>No somos banco, prestamista, corredor, custodio de fondos ni proveedor de servicios de inversión.</li>
-        <li>No ejecutamos pagos, transferencias bancarias ni inversiones en tu nombre desde esta app.</li>
-      </ul>
-    </div>
-
-    <div class="legal__section">
-      <span class="legal__section-num">04</span>
-      <h2 class="legal__section-title">Suscripciones y pagos</h2>
-      <ul class="legal__list">
-        <li>Algunas funciones pueden requerir una suscripción paga.</li>
-        <li>Los límites actuales del plan Gratis incluyen hasta 3 presupuestos y hasta 3 metas activas; Premium elimina estos límites.</li>
-        <li>Los cargos, renovaciones, cancelaciones y reembolsos son gestionados por Apple App Store o Google Play, según donde hayas comprado.</li>
-        <li>La falta de pago o cancelación puede limitar el acceso a funcionalidades premium.</li>
-      </ul>
-    </div>
-
-    <div class="legal__section">
-      <span class="legal__section-num">05</span>
-      <h2 class="legal__section-title">Uso permitido y prohibiciones</h2>
-      <ul class="legal__list">
-        <li>Debés usar la app de forma lícita y sin dañar la seguridad, disponibilidad o integridad del servicio.</li>
-        <li>Están prohibidos el acceso no autorizado, la extracción masiva de datos, la ingeniería inversa, la distribución de malware y el uso fraudulento.</li>
-        <li>No podés usar las marcas, contenido o software de Infinyte más allá de tu licencia de uso personal.</li>
-      </ul>
-    </div>
-
-    <div class="legal__section">
-      <span class="legal__section-num">06</span>
-      <h2 class="legal__section-title">Propiedad intelectual y licencia</h2>
-      <ul class="legal__list">
-        <li>Infinyte y sus licenciantes conservan todos los derechos sobre el software, diseño, marca y contenido.</li>
-        <li>Te otorgamos una licencia limitada, revocable, no exclusiva y no transferible para uso personal de la app.</li>
-        <li>Tus datos siguen siendo tuyos; nos otorgás solo los derechos necesarios para operar técnicamente el servicio.</li>
-      </ul>
-    </div>
-
-    <div class="legal__section">
-      <span class="legal__section-num">07</span>
-      <h2 class="legal__section-title">Disponibilidad del servicio, soporte y cambios</h2>
-      <ul class="legal__list">
-        <li>Podemos actualizar, modificar, suspender o descontinuar funciones temporal o permanentemente.</li>
-        <li>Podemos requerir actualizaciones de seguridad o compatibilidad para el uso continuado de la app.</li>
-        <li>El mantenimiento planificado o correctivo puede causar tiempo de inactividad temporal.</li>
-      </ul>
-    </div>
-
-    <div class="legal__section">
-      <span class="legal__section-num">08</span>
-      <h2 class="legal__section-title">Descargos y limitación de responsabilidad</h2>
-      <ul class="legal__list">
-        <li>El servicio se proporciona "tal cual" y "según disponibilidad" sin garantías de operación ininterrumpida o libre de errores.</li>
-        <li>La información y los reportes de la app son solo informativos y no constituyen asesoría financiera, legal, fiscal o contable.</li>
-        <li>En la máxima medida permitida por la ley, no somos responsables por daños indirectos, lucro cesante, oportunidades perdidas o decisiones basadas en información de la app.</li>
-        <li>Nuestra responsabilidad acumulada total no superará los montos pagados por vos en los 12 meses anteriores, o USD 50 si no hubo pagos.</li>
-      </ul>
-    </div>
-
-    <div class="legal__section">
-      <span class="legal__section-num">09</span>
-      <h2 class="legal__section-title">Indemnización</h2>
-      <ul class="legal__list">
-        <li>Aceptás defender, indemnizar y mantener indemne a Infinyte frente a reclamos de terceros que surjan por tu uso indebido de la app o incumplimiento de estos términos.</li>
-      </ul>
-    </div>
-
-    <div class="legal__section">
-      <span class="legal__section-num">10</span>
-      <h2 class="legal__section-title">Terminación</h2>
-      <ul class="legal__list">
-        <li>Podés dejar de usar la app en cualquier momento.</li>
-        <li>Podemos suspender o terminar el acceso por incumplimiento, riesgo de seguridad o requerimiento legal.</li>
-        <li>Las cláusulas de propiedad intelectual, limitaciones de responsabilidad e indemnización sobreviven a la terminación.</li>
-      </ul>
-    </div>
-
-    <div class="legal__section">
-      <span class="legal__section-num">11</span>
-      <h2 class="legal__section-title">Ley aplicable y resolución de disputas</h2>
-      <ul class="legal__list">
-        <li>Estos términos se interpretan bajo la ley aplicable, incluyendo normas obligatorias de protección al consumidor cuando corresponda.</li>
-        <li>Antes de procedimientos formales, ambas partes intentarán resolver disputas de buena fe a través de los canales de soporte en la app.</li>
-        <li>Si no se resuelve, las disputas serán tramitadas por la autoridad o tribunal competente según la ley aplicable.</li>
-      </ul>
-    </div>
-
-    <div class="legal__section">
-      <span class="legal__section-num">12</span>
-      <h2 class="legal__section-title">Cambios a los términos</h2>
-      <ul class="legal__list">
-        <li>Podemos modificar estos términos por razones legales, técnicas o comerciales.</li>
-        <li>La versión vigente y la fecha de vigencia estarán disponibles en la app.</li>
-        <li>Si continuás usando la app después de la fecha de vigencia, se considera que aceptás los términos actualizados.</li>
-      </ul>
-    </div>
-
-    <p class="legal__footer-text">Si no aceptás estos términos, no uses Infinyte ni sus servicios.</p>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__bottom">
-        <span>&copy; 2026 Infinyte. Todos los derechos reservados.</span>
-        <span>
-          <a href="privacy.html" style="color: var(--color-text-tertiary); margin-right: 16px;">Privacidad</a>
-          <a href="terms.html" style="color: var(--color-text-tertiary); margin-right: 16px;">Términos</a>
-          <a href="delete-account.html" style="color: var(--color-text-tertiary);">Eliminar Cuenta</a>
-        </span>
+      <div class="legal__section">
+        <span class="legal__section-num">03</span>
+        <h2 class="legal__section-title">Naturaleza del servicio</h2>
+        <ul class="legal__list">
+          <li>Infinyte es una herramienta de organización de finanzas personales.</li>
+          <li>
+            No somos banco, prestamista, corredor, custodio de fondos ni proveedor de
+            servicios de inversión.
+          </li>
+          <li>
+            No ejecutamos pagos, transferencias bancarias ni inversiones en tu nombre
+            desde esta app.
+          </li>
+        </ul>
       </div>
-    </div>
-  </footer>
 
-  <script>
-    const menuBtn = document.getElementById('menuBtn');
-    const navLinks = document.querySelector('.nav__links');
-    if (menuBtn && navLinks) {
-      menuBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
-    }
-  </script>
-</body>
+      <div class="legal__section">
+        <span class="legal__section-num">04</span>
+        <h2 class="legal__section-title">Suscripciones y pagos</h2>
+        <ul class="legal__list">
+          <li>Algunas funciones pueden requerir una suscripción paga.</li>
+          <li>
+            Los límites actuales del plan Gratis incluyen hasta 3 presupuestos y hasta 3
+            metas activas; Premium elimina estos límites.
+          </li>
+          <li>
+            Los cargos, renovaciones, cancelaciones y reembolsos son gestionados por
+            Apple App Store o Google Play, según donde hayas comprado.
+          </li>
+          <li>
+            La falta de pago o cancelación puede limitar el acceso a funcionalidades
+            premium.
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal__section">
+        <span class="legal__section-num">05</span>
+        <h2 class="legal__section-title">Uso permitido y prohibiciones</h2>
+        <ul class="legal__list">
+          <li>
+            Debés usar la app de forma lícita y sin dañar la seguridad, disponibilidad o
+            integridad del servicio.
+          </li>
+          <li>
+            Están prohibidos el acceso no autorizado, la extracción masiva de datos, la
+            ingeniería inversa, la distribución de malware y el uso fraudulento.
+          </li>
+          <li>
+            No podés usar las marcas, contenido o software de Infinyte más allá de tu
+            licencia de uso personal.
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal__section">
+        <span class="legal__section-num">06</span>
+        <h2 class="legal__section-title">Propiedad intelectual y licencia</h2>
+        <ul class="legal__list">
+          <li>
+            Infinyte y sus licenciantes conservan todos los derechos sobre el software,
+            diseño, marca y contenido.
+          </li>
+          <li>
+            Te otorgamos una licencia limitada, revocable, no exclusiva y no
+            transferible para uso personal de la app.
+          </li>
+          <li>
+            Tus datos siguen siendo tuyos; nos otorgás solo los derechos necesarios para
+            operar técnicamente el servicio.
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal__section">
+        <span class="legal__section-num">07</span>
+        <h2 class="legal__section-title">
+          Disponibilidad del servicio, soporte y cambios
+        </h2>
+        <ul class="legal__list">
+          <li>
+            Podemos actualizar, modificar, suspender o descontinuar funciones temporal o
+            permanentemente.
+          </li>
+          <li>
+            Podemos requerir actualizaciones de seguridad o compatibilidad para el uso
+            continuado de la app.
+          </li>
+          <li>
+            El mantenimiento planificado o correctivo puede causar tiempo de inactividad
+            temporal.
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal__section">
+        <span class="legal__section-num">08</span>
+        <h2 class="legal__section-title">Descargos y limitación de responsabilidad</h2>
+        <ul class="legal__list">
+          <li>
+            El servicio se proporciona "tal cual" y "según disponibilidad" sin garantías
+            de operación ininterrumpida o libre de errores.
+          </li>
+          <li>
+            La información y los reportes de la app son solo informativos y no
+            constituyen asesoría financiera, legal, fiscal o contable.
+          </li>
+          <li>
+            En la máxima medida permitida por la ley, no somos responsables por daños
+            indirectos, lucro cesante, oportunidades perdidas o decisiones basadas en
+            información de la app.
+          </li>
+          <li>
+            Nuestra responsabilidad acumulada total no superará los montos pagados por
+            vos en los 12 meses anteriores, o USD 50 si no hubo pagos.
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal__section">
+        <span class="legal__section-num">09</span>
+        <h2 class="legal__section-title">Indemnización</h2>
+        <ul class="legal__list">
+          <li>
+            Aceptás defender, indemnizar y mantener indemne a Infinyte frente a reclamos
+            de terceros que surjan por tu uso indebido de la app o incumplimiento de
+            estos términos.
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal__section">
+        <span class="legal__section-num">10</span>
+        <h2 class="legal__section-title">Terminación</h2>
+        <ul class="legal__list">
+          <li>Podés dejar de usar la app en cualquier momento.</li>
+          <li>
+            Podemos suspender o terminar el acceso por incumplimiento, riesgo de
+            seguridad o requerimiento legal.
+          </li>
+          <li>
+            Las cláusulas de propiedad intelectual, limitaciones de responsabilidad e
+            indemnización sobreviven a la terminación.
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal__section">
+        <span class="legal__section-num">11</span>
+        <h2 class="legal__section-title">Ley aplicable y resolución de disputas</h2>
+        <ul class="legal__list">
+          <li>
+            Estos términos se interpretan bajo la ley aplicable, incluyendo normas
+            obligatorias de protección al consumidor cuando corresponda.
+          </li>
+          <li>
+            Antes de procedimientos formales, ambas partes intentarán resolver disputas
+            de buena fe a través de los canales de soporte en la app.
+          </li>
+          <li>
+            Si no se resuelve, las disputas serán tramitadas por la autoridad o tribunal
+            competente según la ley aplicable.
+          </li>
+        </ul>
+      </div>
+
+      <div class="legal__section">
+        <span class="legal__section-num">12</span>
+        <h2 class="legal__section-title">Cambios a los términos</h2>
+        <ul class="legal__list">
+          <li>
+            Podemos modificar estos términos por razones legales, técnicas o
+            comerciales.
+          </li>
+          <li>
+            La versión vigente y la fecha de vigencia estarán disponibles en la app.
+          </li>
+          <li>
+            Si continuás usando la app después de la fecha de vigencia, se considera que
+            aceptás los términos actualizados.
+          </li>
+        </ul>
+      </div>
+
+      <p class="legal__footer-text">
+        Si no aceptás estos términos, no uses Infinyte ni sus servicios.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <a class="footer__brand" href="index.html"
+            >Infinyte<span>Hecha para decidir con libertad.</span></a
+          ><a
+            class="company-link"
+            href="https://chainbreakerlabs.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Un proyecto de<br /><strong>ChainBreaker Labs ↗</strong></a
+          >
+        </div>
+        <div class="footer__bottom">
+          <span>© <span id="year">2026</span> Infinyte</span>
+          <div class="footer__links">
+            <a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a
+            ><a href="delete-account.html">Eliminar cuenta</a
+            ><a href="mailto:infinyte.app+support@gmail.com">Soporte ↗</a>
+          </div>
+          <a href="#top" class="back-top" aria-label="Volver al inicio">↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
